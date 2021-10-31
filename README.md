@@ -1,1 +1,1 @@
-# dynamic_static.glm
+# dynamic_static.math
