@@ -1,0 +1,18 @@
+
+# ==========================================
+#   Copyright (c) 2021 dynamic_ctatic
+#       Licensed under the MIT license
+#     http://opensource.org/licenses/MIT
+# ==========================================
+
+include(FetchContent)
+
+FetchContent_Declare(
+    glm
+    GIT_REPOSITORY "https://github.com/g-truc/glm.git"
+    GIT_TAG bf71a834948186f4097caa076cd2663c69a10e1e # 0.9.9.8
+    GIT_PROGRESS TRUE
+    FETCHCONTENT_UPDATES_DISCONNECTED
+)
+FetchContent_MakeAvailable(glm)
+set_target_properties(glm PROPERTIES FOLDER "dynamic_static/external/")
