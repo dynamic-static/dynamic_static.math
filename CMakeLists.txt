@@ -29,10 +29,14 @@ dst_add_static_library(
         "${includeDirectory}"
     includeFiles
         "${includePath}/math/camera.hpp"
+        "${includePath}/math/color.hpp"
+        "${includePath}/math/free-camera-controller.hpp"
+        "${includePath}/math/defines.hpp"
         "${includePath}/math/glm.hpp"
         "${includePath}/math/transform.hpp"
         "${includePath}/math.hpp"
     sourceFiles
         "${sourcePath}/math/camera.cpp"
+        "${sourcePath}/math/free-camera-controller.cpp"
         "${sourcePath}/math/transform.cpp"
 )
