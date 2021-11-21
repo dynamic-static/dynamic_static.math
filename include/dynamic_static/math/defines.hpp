@@ -132,15 +132,5 @@ inline ReturnType round_cast(const T& value)
     return static_cast<ReturnType>(std::round(value));
 }
 
-// inline std::string to_string(const glm::vec3& vec3)
-// {
-//     return "{ " + std::to_string(vec3.x) + ", " + std::to_string(vec3.y) + ", " + std::to_string(vec3.z) + " }";
-// }
-// 
-// inline std::string to_string(const glm::quat& quat)
-// {
-//     return "{ " + std::to_string(quat.x) + ", " + std::to_string(quat.y) + ", " + std::to_string(quat.z) + ", " + std::to_string(quat.w) + " }";
-// }
-
 } // namespace math
 } // namespace dst
