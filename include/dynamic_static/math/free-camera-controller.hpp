@@ -19,17 +19,6 @@ class FreeCameraController
     : public Camera::Controller
 {
 public:
-    static constexpr float DefaultMoveEnabled { true };
-    static constexpr float DefaultMoveSpeed { 4.2f };
-    static constexpr bool DefaultLookEnabled { true };
-    static constexpr glm::vec2 DefaultLookSpeed { 8.8f, 8.8f };
-    static constexpr float DefaultVerticalLookMin { -glm::radians(90.0f) };
-    static constexpr float DefaultVerticalLookMax { glm::radians(90.0f) };
-    static constexpr bool DefaultFieldOfViewEnabled { true };
-    static constexpr float DefaultFieldOfViewSpeed { 0.5f };
-    static constexpr float DefaultFieldOfViewMin { 20 };
-    static constexpr float DefaultFieldOfViewMax { 120 };
-
     struct UpdateInfo
     {
         float deltaTime { };
@@ -46,16 +35,16 @@ public:
 
     void update(const UpdateInfo& updateInfo);
 
-    bool moveEnabled { DefaultMoveEnabled };
-    float moveSpeed { DefaultMoveSpeed };
-    bool lookEnabled { DefaultLookEnabled };
-    glm::vec2 lookSpeed { DefaultLookSpeed };
-    float verticalLookMin { DefaultVerticalLookMin };
-    float verticalLookMax { DefaultVerticalLookMax };
-    bool fieldOfViewEnabled { DefaultFieldOfViewEnabled };
-    float fieldOfViewSpeed { DefaultFieldOfViewSpeed };
-    float fieldOfViewMin { DefaultFieldOfViewMin };
-    float fieldOfViewMax { DefaultFieldOfViewMax };
+    bool moveEnabled { true };
+    float moveSpeed { 4.2f };
+    bool lookEnabled { true };
+    glm::vec2 lookSpeed { 8.8f, 8.8f };
+    float verticalLookMin { -glm::radians(90.0f) };
+    float verticalLookMax { glm::radians(90.0f) };
+    bool fieldOfViewEnabled { true };
+    float fieldOfViewSpeed { 0.5f };
+    float fieldOfViewMin { 20 };
+    float fieldOfViewMax { 120 };
 
 private:
     float mVerticalLook { };

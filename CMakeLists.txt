@@ -28,6 +28,7 @@ dst_add_static_library(
     includeDirectories
         "${includeDirectory}"
     includeFiles
+        "${includePath}/math/binpack.hpp"
         "${includePath}/math/camera.hpp"
         "${includePath}/math/color.hpp"
         "${includePath}/math/free-camera-controller.hpp"

@@ -9,6 +9,7 @@
 
 #pragma once
 
+#include "dynamic_static/math/binpack.hpp"
 #include "dynamic_static/math/camera.hpp"
 #include "dynamic_static/math/color.hpp"
 #include "dynamic_static/math/defines.hpp"
